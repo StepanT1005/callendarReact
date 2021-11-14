@@ -1,0 +1,74 @@
+.modal__content {
+  position: relative;
+  max-width: 60vw;
+  height: 60vh;
+}
+
+.create-event {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: 30vh;
+
+  &__close-btn {
+    transform: rotate(45deg);
+    border: none;
+    font-weight: 100;
+    font-size: 40px;
+    display: block;
+    margin-left: auto;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.event-form {
+  display: flex;
+  flex-direction: column;
+
+  &__submit-btn {
+    position: absolute;
+    bottom: 1.5vh;
+    right: 2vh;
+    background-color: #2a6ff0;
+    border: none;
+    color: white;
+    width: 14vw;
+    height: 5vh;
+    border-radius: 1vh;
+    cursor: pointer;
+  }
+  &__field {
+    border: none;
+    margin-top: 10vh;
+  }
+
+  > .event-form__field:first-child {
+    margin: 10px;
+    margin-left: 30px;
+    line-height: 30px;
+    font-size: 24px;
+    border-bottom: #2a6ff0 3px solid;
+  }
+}
+.event-form__field {
+  outline: none;
+}
+
+.btn {
+  position: absolute;
+  bottom: 1.5vh;
+  right: 2vh;
+  background-color: #2a6ff0;
+  border: none;
+  color: white;
+  width: 14vw;
+  height: 5vh;
+  border-radius: 1vh;
+}
+.event-form__submit-btn:disabled {
+  color: red;
+}
